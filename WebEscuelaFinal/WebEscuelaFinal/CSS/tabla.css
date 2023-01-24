@@ -1,0 +1,122 @@
+﻿.tabla {
+    overflow: auto;
+    margin-bottom: 8px;
+    position: relative;
+    width: 90%;
+    box-shadow: -1px 0px 30px 0px rgb(0 0 0 / 74%);
+    border-spacing: 0;
+    border-radius: 8px;
+    direction: ltr;
+}
+
+.tabla__pdf {
+    position: fixed;
+    left: 0;
+    width: 90%;
+    margin: auto;
+    top: 0;
+    right: 0;
+    z-index: 50;
+    height: 90%;
+    bottom: 0;
+}
+
+iframe:hover {
+    cursor: pointer;
+}
+
+.atras {
+    position: absolute;
+    right: 59px;
+    top: 30px;
+    background: var(--color-fondo);
+    border-radius: 50%;
+    z-index: 60;
+    font-size: 50px;
+}
+
+    .atras:hover {
+        background: #fff;
+        color: var(--red-sweet);
+    }
+
+.pdf {
+    font-size: 28px;
+    transition: all .3s;
+}
+
+    .pdf:hover {
+        color: var(--red-sweet);
+        font-size: 32px;
+        cursor: pointer;
+    }
+
+#divTable {
+    display: flex;
+    margin-bottom: 132px;
+    max-height: 500px;
+    overflow: auto;
+    align-items: flex-start;
+    width: 90%;
+    align-content: center;
+    justify-content: space-between;
+    border-radius: 0 0 0 8px;
+    flex-direction: row;
+}
+
+
+th, td {
+    min-width: 100px;
+}
+
+    #divTable::-webkit-scrollbar {
+        width: 12px; /* width of the entire scrollbar */
+        padding-bottom: 12px;
+    }
+
+    #divTable::-webkit-scrollbar-track {
+        background: #303030; /* color of the tracking area */
+    }
+
+    #divTable::-webkit-scrollbar-thumb {
+        background-color: var(--red-sweet);
+        /* color of the scroll thumb */
+        border-radius: 20px; /* roundness of the scroll thumb */
+        border: 3px solid var(--black); /* creates padding around scroll thumb */
+    }
+
+.tabla thead {
+    transition: all .3s;
+    position: sticky;
+    background-color: var(--red-sweet);
+    color: #fff;
+    height: 3rem;
+    top: 0;
+}
+
+.tabla tbody tr td {
+    text-align: center;
+    padding: .5rem;
+}
+
+.edit:hover {
+    cursor: pointer;
+    color: var(--red-sweet);
+}
+
+#roles {
+    text-align: center;
+}
+
+.tabla__foto {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 30px;
+    object-fit: cover;
+    transition: all .3s;
+}
+@media (max-width:600px){
+    #divTable{
+       width:100%;
+    }
+}
